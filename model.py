@@ -2,9 +2,10 @@ import os
 import time
 from glob import glob
 from six.moves import xrange
-from scipy.misc import imresize
+from scipy.misc import *
 from subpixel import PS
 from mathops import *
+from utils import *
 class model(object):
   def __init__(self, sess, image_size=128, is_crop=True,
                batch_size=64, image_shape=[128, 128, 3],

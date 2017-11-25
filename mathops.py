@@ -4,17 +4,15 @@ define math operations here
         transform,
 
 """
-import math
-import numpy as np
 import tensorflow as tf
 
 from tensorflow.python.framework import ops
 
-from utils import *
+
 
 
 class batch_norm(object):
-  """Code modification of http://stackoverflow.com/a/33950177"""
+
 
   def __init__(self, epsilon=1e-5, momentum=0.9, name="batch_norm"):
     with tf.variable_scope(name):

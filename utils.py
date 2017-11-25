@@ -2,12 +2,7 @@
     load image , write html front end
 
 """
-"""
-Some codes from https://github.com/Newmu/dcgan_code
-"""
-from __future__ import division
 import math
-import random
 import scipy.misc
 import numpy as np
 
