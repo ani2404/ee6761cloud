@@ -20,9 +20,6 @@ def save_images(images, size, image_path):
 def imread(path):
     return scipy.misc.imread(path).astype(np.float)
 
-def merge_images(images, size):
-    return inverse_transform(images)
-
 def merge(images, size):
     h, w = images.shape[1], images.shape[2]
     img = np.zeros((h * size[0], w * size[1], 3))

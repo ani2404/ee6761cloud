@@ -4,34 +4,6 @@ from model import model
 import utils
 import mathops
 import tensorflow as tf
-# from Tkinter import *
-# front end class
-'''
-class Application(Frame):
-    def say_hi(self):
-        print("hi there, everyone!")
-
-    def createWidgets(self):
-        self.QUIT = Button(self)
-        self.QUIT["text"] = "QUIT"
-        self.QUIT["fg"] = "red"
-        self.QUIT["command"] = self.quit
-
-        self.QUIT.pack({"side": "left"})
-
-        self.hi_there = Button(self)
-        self.hi_there["text"] = "Hello",
-        self.hi_there["command"] = self.say_hi
-
-        self.hi_there.pack({"side": "left"})
-
-    def __init__(self, master=None):
-        Frame.__init__(self, master)
-        self.pack()
-        self.createWidgets()
-
-'''
-# defining all arguments from the user
 
 flags = tf.app.flags
 flags.DEFINE_integer("epoch",5,"layers - 5")
@@ -44,7 +16,7 @@ flags.DEFINE_integer("train_size", np.inf, "The size of train images, default se
 flags.DEFINE_float("beta1", 0.5, "Momentum term of adam [0.5]")
 flags.DEFINE_integer("batch_size", 64, "The size of batch images [64]")
 flags.DEFINE_integer("image_size", 128, "The size of image to use (will be center cropped) [108]")
-flags.DEFINE_string("dataset", "celebA", "The name of dataset [celebA, mnist, lsun]")
+flags.DEFINE_string("dataset", "celebA", "Trained with celebA")
 flags.DEFINE_string("sample_dir", "samples", "Directory name to save the image samples [samples]")
 flags.DEFINE_boolean("visualize_bool", False, "True for visualizing, False for nothing [False]")
 
