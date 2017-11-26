@@ -59,8 +59,12 @@ def main():
         os.makedirs(FLAGS.output_dir)
     with tf.Session() as sess:
       
-      dcgan = DCGAN(sess, image_size=FLAGS.image_size, batch_size=FLAGS.batch_size,
+      op = model(sess, image_size=FLAGS.image_size, batch_size=FLAGS.batch_size,
                     dataset_name=FLAGS.dataset, is_crop=FLAGS.is_crop, checkpoint_dir=FLAGS.checkpoint_dir)
+      if FLAGS.is_train:
+        op.train(FLAGS)
+      else:
+        op.load(FLAGS.checkpoint_dir)
 
 
 if __name__ == '__main__':
