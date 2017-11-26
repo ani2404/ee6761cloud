@@ -141,6 +141,8 @@ class model(object):
     h2 = PS(h2, 4, color=True)
     #Convolution networks
 
+    return tf.nn.tanh(h2)
+
   def save(self, checkpoint_dir, step):
     model_name = "DCGAN.model"
     model_dir = "%s_%s" % (self.data_name, self.batch_size)

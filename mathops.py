@@ -1,10 +1,10 @@
 """
 define math operations here
   TODO :
-        transform,
 
 """
 import tensorflow as tf
+
 
 from tensorflow.python.framework import ops
 

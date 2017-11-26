@@ -2,7 +2,7 @@ import os
 import scipy.misc
 import numpy as np
 
-from code_ref.model import DCGAN
+from model import DCGAN
 # from utils import  visualize, to_json
 
 import tensorflow as tf

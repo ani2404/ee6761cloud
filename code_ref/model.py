@@ -5,10 +5,10 @@ from glob import glob
 import tensorflow as tf
 from six.moves import xrange
 from scipy.misc import imresize
-from code_ref.subpixel import PS
+from subpixel import PS
 
-from code_ref.ops import *
-from code_ref.utils import *
+from ops import *
+from utils import *
 
 def doresize(x, shape):
     x = np.copy((x+1.)*127.5).astype("uint8")
