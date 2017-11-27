@@ -144,7 +144,7 @@ class model(object):
     return tf.nn.tanh(h2)
 
   def save(self, checkpoint_dir, step):
-    model_name = "DCGAN.model"
+    model_name = "imageres.model"
     model_dir = "%s_%s" % (self.data_name, self.batch_size)
     checkpoint_dir = os.path.join(checkpoint_dir, model_dir)
 
