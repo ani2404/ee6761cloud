@@ -3,12 +3,19 @@
 
 """
 import math
-import scipy.misc
+from scipy.misc import imresize
+import scipy
 import numpy as np
 
 
 
 get_stddev = lambda x, k_h, k_w: 1/math.sqrt(k_w*k_h*x.get_shape()[-1])
+
+
+def doresize(x, shape):
+    x = np.copy((x + 1.) * 127.5).astype("uint8")
+    y = imresize(x, shape)
+    return y
 
 def get_image(image_path, image_size, is_crop=True):
     return transform(imread(image_path), image_size, is_crop)

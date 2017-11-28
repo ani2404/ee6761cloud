@@ -13,6 +13,7 @@ var result = document.querySelector('.result'),
     cropper = '';
 
 // on change show image with crop options
+console.log(result);
 upload.addEventListener('change', function (e) {
   if (e.target.files.length) {
     // start file reader
