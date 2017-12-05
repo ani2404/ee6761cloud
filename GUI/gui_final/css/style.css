@@ -1,0 +1,513 @@
+@font-face {
+	font-family: 'bold';
+	src: url('../fonts/mbold.ttf');
+	font-weight: normal;
+	font-style: normal;
+	color:#CFF;
+	
+}
+@font-face {
+	font-family: 'forum';
+	src: url('../fonts/bitwise.ttf');
+	font-weight: normal;
+	font-style: normal;
+	color:#CFF;
+	
+}
+@font-face {
+	font-family: 'awsome';
+	src: url('../fonts/FontAwesome.ttf');
+	font-weight: normal;
+	font-style: normal;
+	color:#CFF;
+	
+}
+@font-face {
+	font-family:'fla';
+	src: url('../fonts/Reckoner.ttf');
+	font-weight: normal;
+	font-style: normal;
+	color:#CFF;
+	
+}
+@font-face {
+	font-family: 'anirm';/* lord of rings font*/
+	src: url('../fonts/League.ttf');
+	font-weight: normal;
+	font-style: normal;
+	color:#CFF;
+	
+}
+@font-face {
+	font-family: 'masque';/*its racing style*/
+	src: url('../fonts/MASQUE.ttf');
+	font-weight: normal;
+	font-style: normal;
+	color:#CFF;
+	
+}
+
+
+body {
+	padding: 0;
+	margin: 0;
+	background: #000;
+	overflow: hidden;
+}
+
+body > div {
+	position: absolute;
+	top: 2px;
+	left: 5px;
+	width: 2px;
+}
+
+
+/* MENU STUFF ================= */
+#menu {
+	position: absolute;
+	z-index: 12;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	top: 25px;
+	left: 4px;
+	background: #000;
+	opacity: 0.5;
+	padding: 10px;
+	
+}
+
+.current {
+	background: black;
+	color: #fff !important;
+	border-bottom: 1px solid #000 !important;
+}
+
+.current:hover {
+	color: #fff;
+}
+
+#menu li a {
+	border-bottom: 1px solid #eee;
+	font-family: "forum";
+	width: 250px;
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+	font-size:22px;
+	text-transform:uppercase;
+	color: #fff;
+	opacity:1 !important;
+}
+
+#menu li a:hover {
+	background: #000;
+	color: #fff;
+	/*border-bottom: 1px solid #000;*/
+}
+
+/* END MENU STUFF =========================== */
+
+.content {
+	position: absolute;
+	top: 0px;
+	left: 400px;
+	display: none;
+	z-index: 11;
+	color:#000;
+	
+	max-height:650px;
+	border:thin;
+}
+
+ .before-slices, #home .after-slices {
+	display: inline-block;
+	height:  inherit;
+	text-transform: lowercase;
+	
+}
+
+#home .slice {
+	display: inline-block;
+	position: relative;
+	background: #fff;
+	z-index: inherit;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+	font-weight: bold;
+}
+
+#about .slice {
+	/*background: #fff337;*/
+	background:#CCF;
+}
+
+#Adhiyaana .slice {
+	background-color: #47bcf2;
+}
+#commevents .slice {
+	background-color: #bda0cb;
+}
+#Contactus .slice {
+	background-color: #fdb147;
+}
+#Credits .slice {
+	background-color: #ff7f50;
+}#photoevent .slice{
+/*background-color:#ff00ff;*/
+
+background:#693;
+}
+
+.endShadow {
+	box-shadow: none !important;
+}
+
+
+.slices, .vertical, .horizontal {
+	width: inherit;
+	height: inherit;	
+}
+
+.vertical .slice {
+	height: inherit;
+	top: 100%;
+	width: 90px;
+	z-index:inherit;
+}
+
+.horizontal .slice {
+	position: absolute;
+	top: 0;
+	right: 100%;
+	width: inherit;
+	height: 90px;
+	z-index: inherit;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.slice {
+	position: absolute;
+	text-transform: lowercase;
+}
+
+.left-slices, .right-slices {
+	height: inherit;
+	width: 50%;
+	display: inline-block;
+}
+.left-slices .slice, .right-slices .slice {
+	width: inherit;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+	height: 90px;
+	width: 50%;
+	font-style: italic;
+}
+
+
+
+
+
+.content h1{
+	padding-left:350px;
+	font-family:"bold";
+	text-transform:uppercase;
+}
+
+
+
+#ictas{
+	width:inherit;
+	height:63px;
+	padding:0px 15px 0px 591px;
+	
+}
+#tc{
+	
+	vertical-align:auto;
+	width:inherit;
+	height:108px;
+	padding:0px 0px 0px 333px;
+	opacity:1;
+}
+#homecon{
+	overflow:auto;
+	max-height:650px;
+}
+
+
+#homecon p{
+	text-align:center;
+	padding:160px 40px 0px 0px;
+	font-family:"bold" !important;
+	font-size:28px;
+	
+}
+#homecon h1{
+	text-align:center;
+	padding:0px 300px 0px 400px;
+	font-family:"bold" !important;
+	font-size:49px;
+	
+}
+#aboutcon{
+	
+	padding:25px 60px 20px 350px;
+	/*font-family:"forum";
+	font-size:35px;*/
+	overflow:auto;
+	max-height:600px;
+}
+#aboutcon h1{
+	
+	padding:0px 10px 0px 100px;
+	font-family:"anirm";
+	font-size:32px;
+	text-align:center;
+}
+#aboutcon p{
+	
+	
+	font-family:"bold";
+	font-size:15px;
+}
+
+.row{
+	padding-left:350px;
+	
+}
+.eventscon
+{
+	
+position:relative;
+cursor:pointer;
+width:250px;
+height:300px;
+padding:10px 100px 10px 10px;
+}
+
+
+
+.eventscon img{
+	position:absolute;
+	left:0;
+	
+	-webkit-transition: all 300ms ease-out;
+
+  -moz-transition: all 300ms ease-out;
+
+  -o-transition: all 300ms ease-out;
+
+  -ms-transition: all 300ms ease-out;
+
+  transition: all 300ms ease-out;
+ 
+}
+
+.eventscon .overimg {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity:1;
+  width:250px;
+  height: 250px;
+  padding: 0px 0px;
+}
+
+.eventscon:hover .overimg { 
+opacity: 1;
+
+background-color:rgba(96, 96, 96,0.9); 
+}
+eventscon:hover { 
+opacity: 0.1;
+ 
+}
+
+.eventscon .overtext {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  font-family:"masque";
+}
+
+.eventscon .title {
+  font-size: 1em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+  color:#fFF;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.eventscon:hover .title,
+.eventscon:focus .title {
+  opacity: 1;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+}
+
+.eventscon .tagline {
+  font-size: 0.8em;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+  font-family:"Comic Sans MS", cursive;
+  padding-left: 30px;
+}
+
+.eventscon:hover .tagline,
+.eventscon:focus .tagline {
+  opacity: 1;
+  transform: translateX(40px);
+  -webkit-transform: translateX(40px);
+}
+
+
+/*contact####################################*/
+#contactcon{
+	padding:5px 0px 0px 325px !important ;
+	
+}
+
+#contactcon h1{
+	text-align:left;
+	padding:0px 0px 0px 20px !important;
+	font-family:"anirm";
+	font-size:16px;
+}
+#contactcon h2{
+	text-align:left;
+	padding:10px 0px 0px 15px !important;
+	font-family:"masque";
+	font-size:21px;
+}
+#contactcon h3{
+	text-align:left;
+	padding:0px 0px 0px 15px !important;
+	font-family:"forum";
+	font-size:45px;
+}
+#contactcon h5{
+	text-align:left;
+	padding:0px 0px 0px 15px !important;
+	font-family:"forum";
+	font-size:30px;
+}
+
+
+
+
+
+#images{
+	padding:5px 0px 0px 325px !important ;
+	overflow:scroll;
+	width:300px;
+}
+
+#images h1{
+	text-align:center;
+	padding:0px 0px 0px 20px !important;
+	font-family:"anirm";
+	font-size:16px;
+}
+#images h2{
+	text-align:center;
+	padding:10px 0px 0px 15px !important;
+	font-family:"masque";
+	font-size:21px;
+}
+#images h3{
+	text-align:center;
+	padding:0px 0px 0px 15px !important;
+	font-family:"forum";
+	font-size:45px;
+}
+#images h5{
+	text-align:center;
+	padding:0px 0px 0px 15px !important;
+	font-family:"forum";
+	font-size:30px;
+}
+
+
+
+.polaorid-images{
+	padding-left:250px;
+	overflow:auto;
+}
+.concre{
+	padding-left:350px;
+	padding-top:20px;
+	overflow:auto;
+	max-height:550px;
+	
+}
+
+
+
+
+.page {
+	margin: 1em auto;
+	max-width: 100;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	height: 100%;
+}
+
+.box {
+	padding: 0.5em;
+	width: 100%;
+	margin:0.5em;
+}
+
+.box-2 {
+	padding: 0.5em;
+	width: calc(100%/2 - 1em);
+}
+
+.options label,
+.options input{
+	width:4em;
+	padding:0.5em 1em;
+}
+.btn{
+	background:white;
+	color:black;
+	border:1px solid black;
+	padding: 0.5em 1em;
+	text-decoration:none;
+	margin:0.8em 0.3em;
+	display:inline-block;
+	cursor:pointer;
+}
+
+.hide {
+	display: none;
+}
+
+img {
+	max-width: 100%;
+}

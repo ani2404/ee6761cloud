@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Image/Video super resolution</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css'> 
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/shadow.js"></script>
+    <script type="text/javascript" src="./js/javascript.js"></script>  
+    <script src="js/classie.js"></script>
+    <script src="js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+    <script>var polyfilter_scriptpath = '/js/';</script>
+    <script src="js/cssParser.js"></script>
+    <script src="js/css-filters-polyfill.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/cropperjs/0.8.1/cropper.min.js'></script>
+    
+  </head>
+
+  <body>
+    <ul id="menu">
+	<li><a href="" name="home">Home</a></li>
+	<li><a href="" name="about">Image</a></li>
+	<li><a href="" name="Adhiyaana">Video</a></li>
+    </ul>
+    <div id="home">
+      <div class="content">
+        <div id="homecon">
+          <h1>Image super resolution</h1>
+            <p>This is the graphical user interface for our cloud and deep learning project image super resolution using subpixel optimization algorithm.</p>
+        </div>	
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="content">
+        <h1>Upload an image to resolute</h1>
+             <main class="page">         
+	<!-- input file -->
+	        <div class="box">
+		  <input type="file" id="file-input">
+	        </div>
+		<div class=" eventscon   " id="image-in" >
+                    
+		</div>
+		 
+		<!-- save btn -->
+	          <button class="btn save hide ">Resolute</button>
+
+
+		<button class="btn output hide " id = "output">Show Output</button>
+
+		<div class=" eventscon  hide" id="image-out" >
+ 			 <img src=""  alt="" id ="resolved">   
+		</div>
+		
+
+              </main>
+              <script  src="js/index-cropper.js"></script> 
+            </div>
+	  </div>
+        </div>
+      </div>
+   
+
+   <div id="Adhiyaana">
+      <div class="content">
+        <h1>Upload a video to resolute</h1>
+        <div class="row"> 
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="eventscon" >
+              <img src="img/output.jpg"  alt="">            
+              <div class="md-overlay"></div>  
+                <div class="overimg overtext md-trigger md-setperspective" data-modal="modal-2"">                        
+                  <div class="title overtext">Abiyanta</div>	       
+                  <div class="tagline overtext">&#34;The Engineer in you&#34;</div>
+                </div>
+              </div> 
+            </div>
+	  </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
